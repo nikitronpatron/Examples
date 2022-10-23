@@ -20,4 +20,11 @@ Console.WriteLine("Enter coordinates: ");
 int userX = Convert.ToInt32(Console.ReadLine());
 int userY = Convert.ToInt32(Console.ReadLine());
 int quarter = GetQuarterFromCoordinate(userX, userY);
-Console.WriteLine($"You are in ({userX}, {userY}), in {quarter} quarter");
+if (quarter != 0)
+{ 
+    Console.WriteLine($"You are in ({userX}, {userY}), in {quarter} quarter");  
+}
+else
+{
+    Console.WriteLine("Error");
+}
