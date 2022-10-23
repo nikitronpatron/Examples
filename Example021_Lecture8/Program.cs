@@ -1,9 +1,18 @@
 ﻿void SquareIt (int number)
 {
-    for (int i = 1; i <= number; i++)
+    for (int i = 1; i < number; i++)
     {
         int square = i * i;
-        Console.Write($"{square}    ");
+        Console.Write($"{square}, ");
+    }
+    if (number > 0)
+    {
+        int squareLast = number * number;
+        Console.WriteLine($"{squareLast}.");
+    }
+    else
+    {
+        Console.WriteLine("Error");
     }
 }
 
