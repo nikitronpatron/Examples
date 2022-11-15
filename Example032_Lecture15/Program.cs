@@ -12,7 +12,7 @@ void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine($"{array[i]} ");
+        Console.Write($"{array[i]} ");
     }
     Console.WriteLine();
 }
